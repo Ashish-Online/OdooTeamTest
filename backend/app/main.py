@@ -8,7 +8,7 @@ from app.routers import auth, items
 
 app = FastAPI(title="Hackathon API")
 
-# Without this, your React app (different port) gets silently blocked by the browser
+# Without this, your React app (different port) gets silently blocked by the brow
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[settings.frontend_origin],
